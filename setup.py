@@ -23,7 +23,7 @@ setup(
     author_email="d@dnsh.io",
 
     description="Telegraf compatible statsd client with rich support for tags",
-    long_description=read("README.rst"),
+    long_description=read("README.md"),
 
     packages=find_packages(exclude=('tests',)),
 
