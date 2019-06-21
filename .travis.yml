@@ -5,8 +5,7 @@ matrix:
   - python: "3.6"
     env: TOXENV=py36
 install:
-  - pip install -U tox
-  - pip install --user codecov
+  - pip install -U tox codecov
 language: python
 python: 3.6
 script: tox -e ${TOXENV}
