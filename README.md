@@ -2,6 +2,7 @@ tagsd
 =====
 
 [![Build Status](https://travis-ci.org/tailsdotcom/tagsd.svg?branch=master)](https://travis-ci.org/tailsdotcom/tagsd)
+[![codecov](https://codecov.io/gh/tailsdotcom/tagsd/branch/master/graph/badge.svg)](https://codecov.io/gh/tailsdotcom/tagsd)
 
 Telegraf compatible statsd client with rich support for tags
 
