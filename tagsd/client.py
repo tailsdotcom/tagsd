@@ -11,36 +11,13 @@ from statsd.client.udp import Pipeline
 logger = structlog.get_logger(__name__)
 
 
-class DummyStatsDClient(object):
-    def pipeline(self):
-        pass
-
-    def timer(self, stat, rate=1):
-        pass
-
-    def timing(self, stat, delta, rate=1, tags=None):
-        pass
-
-    def incr(self, stat, count=1, rate=1, tags=None):
-        pass
-
-    def decr(self, stat, count=1, rate=1, tags=None):
-        pass
-
-    def gauge(self, stat, value, rate=1, delta=False, tags=None):
-        pass
-
-    def set(self, stat, value, rate=1, tags=None):
-        pass
-
-
 class StatsDTelegrafClientBase(object):
     """
     Telegraf compatible statsd client base.
     This base client supports telegraf /influxdb / datadog style tags
     over statsd protocol
 
-    This class is a superset of StatsClientBase from pystatsd written by jsocol.
+    This class is a superset of StatsClientBase from pystatsd written by jsocol
     Support for tags was added by Dinesh Vitharanage.
 
     Original copyright notice:
