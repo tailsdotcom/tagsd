@@ -4,20 +4,10 @@ import mock
 from tagsd.client import StatsDNoiseless
 
 
-def _send_catcher(data):
-    pass
-
-class DummySender(object):
-    _args = ()
-    _kwargs = {}
-
-    def __call__(self, *args, **kwargs):
-        self._args = args,
-        self._kwargs = kwargs
-
-
 def argtest(return_val):
-    """ Mocks functions with a return value provided + stores args and kwargs that was used to call the function"""
+    """ Mocks functions with a return value provided + stores args and kwargs
+    that was used to call the function
+    """
     class TestArgs(object):
         def __call__(self, *args, **kwargs):
             self.args = args

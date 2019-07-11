@@ -9,7 +9,7 @@ Telegraf compatible statsd client with rich support for tags
 Usage
 -----
 ```python
-from tagsd import StatsDNoiseless
+from tagsd.client import StatsDNoiseless
 
 client = StatsDNoiseless(host='remote.server', default_tags={'some': 'value'})
 
